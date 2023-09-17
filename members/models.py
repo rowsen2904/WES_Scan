@@ -6,7 +6,6 @@ class Specialization(models.Model):
 
     def __str__(self):
         return self.name
-    
 
 
 class Date(models.Model):
@@ -14,7 +13,6 @@ class Date(models.Model):
 
     def __str__(self):
         return self.date
-    
 
 
 class Member(models.Model):
@@ -24,7 +22,7 @@ class Member(models.Model):
 
     fullname = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=8)
-    email = models.EmailField() 
+    email = models.EmailField()
     birth_date = models.DateField()
     gender = models.CharField(max_length=10, choices=Genders.choices)
     specialization = models.ManyToManyField(Specialization)
@@ -33,4 +31,3 @@ class Member(models.Model):
 
     def __str__(self):
         return f"{self.id}. {self.specialization.first()} | {self.fullname}"
-    
