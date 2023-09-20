@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "wes scan"
+version = "0.1.0"
+description = ""
+authors = ["Rowsen <bayramovw0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+djangorestframework = "^3.14.0"
+psycopg2 = "^2.9.7"
+pillow = "^10.0.1"
+django = "^4.2.5"
+django-debug-toolbar = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
