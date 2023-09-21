@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ModelViewSet
 
-from .serializers import MemberSerializer
+from .serializers import MemberSerializer, SpecializationSerializer
 from members.filters import MemberFilter
-from members.models import Member
+from members.models import Member, Specialization
 from members.pagination import MemberPagination
 
 
@@ -11,3 +11,8 @@ class MemberViewSet(ModelViewSet):
     serializer_class = MemberSerializer
     pagination_class = MemberPagination
     filterset_class = MemberFilter
+
+
+class SpecializationViewSet(ModelViewSet):
+    queryset = Specialization.objects.all()
+    serializer_class = SpecializationSerializer
