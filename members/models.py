@@ -9,10 +9,10 @@ class Specialization(models.Model):
 
 
 class Date(models.Model):
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now=True, unique=True)
 
     def __str__(self):
-        return self.date
+        return str(self.date)
 
 
 class Member(models.Model):
