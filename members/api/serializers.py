@@ -21,7 +21,7 @@ class MemberSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Member
-        fields = ["fullname", "email", "birth_date", "phone_number",
+        fields = ["id", "fullname", "email", "birth_date", "phone_number",
                   "gender", "specializations", "dates", "image"]
 
 
