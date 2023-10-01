@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from ..models import Member, Specialization
+from members.models import Member, Specialization
 
 
-class SpecializationField(serializers.RelatedField):
+class NameField(serializers.RelatedField):
 
     def to_representation(self, value):
         return value.name
@@ -16,7 +16,7 @@ class DateField(serializers.RelatedField):
 
 
 class MemberSerializer(serializers.ModelSerializer):
-    specializations = SpecializationField(read_only=True, many=True)
+    specializations = NameField(read_only=True, many=True)
     dates = DateField(read_only=True, many=True)
 
     class Meta:
