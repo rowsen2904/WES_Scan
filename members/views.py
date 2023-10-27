@@ -7,6 +7,7 @@ from django.views.generic import (
     RedirectView,
     UpdateView,
 )
+from django.utils.translation import gettext as _
 
 from .models import Member
 
@@ -16,5 +17,11 @@ def redirect_view(request):
 
 
 class MemberListView(ListView):
-    queryset = Member.objects.all()
+    context_object_name = "members"
+    queryset = (Member.objects.all()
+                .prefetch_related("specializations")
+                .order_by("last_activity"))
     template_name = "members/list.html"
+    extra_context = {
+        "title": _("WES Members")
+    }
