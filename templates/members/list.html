@@ -1,65 +1,81 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block page_title %}{{ title }}{% endblock page_title %}</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <link rel="stylesheet" href="{% static "css/font.css" %}">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>
+      {% block page_title %}
+        {{ title }}
+      {% endblock page_title %}
+    </title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+    <link rel="stylesheet" href="{% static "css/font.css" %}" />
+  </head>
+  <body>
     <div class="container">
-        <div class="d-flex">
-            <div class="menu col-3 vh-100">
-                <div class="wes">
-                    <h2>wes</h2>
-                </div>
-                <div class="menu-btns">
-                    <button><img src="{% static "icons/Vector.svg" %}" alt=""></button>
-                </div>
-                <div class="menu-btns">
-                    <button><img src="{% static "icons/Vector (1).svg" %}" alt=""></button>
-                </div>
-                <div class="menu-btns">
-                    <button><img src="{% static "icons/Group 1.svg" %}" alt=""></button>
-                </div>
-                <div class="menu-btns">
-                    <button><img src="{% static "icons/Group.svg" %}" alt=""></button>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="table">
-                    <div class="d-flex">
-                        <div class="h1 col-6">
-                            Good morning, James!
-                        </div>
-                        <div class="col-6 text-right">
-                            <button><img src="{% static "icons/Vector (3).svg" %}" alt="" class="p-8"></button>
-                            <button><img src="{% static "icons/Vector (2).svg" %}" alt=""></button>
-                        </div>
-                    </div>
-                    <table class="col-12">
-                        <tr>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Email</th>
-                            <th>Gender</th>
-                            <th>Last activity</th>
-                        </tr>
-                        {% for member in members %}
-                        <tr>
-                            <td>{{ member.fullname }}</td>
-                            <td>{{ member.specializations.first }}</td>
-                            <td>{{ member.email }}</td>
-                            <td>{{ member.get_gender_display }}</td>
-                            <td>{{ member.last_activity }}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                </div>
-            </div>
+      <div class="d-flex">
+        <div class="menu col-3 vh-100">
+          <div class="wes">
+            <h2>wes</h2>
+          </div>
+          <div class="menu-btns">
+            <button>
+              <img src="{% static "icons/Vector.svg" %}" alt="" height="" width="" />
+            </button>
+          </div>
+          <div class="menu-btns">
+            <button>
+              <img src="{% static "icons/Vector (1).svg" %}" alt="" height="" width="" />
+            </button>
+          </div>
+          <div class="menu-btns">
+            <button>
+              <img src="{% static "icons/Group 1.svg" %}" alt="" height="" width="" />
+            </button>
+          </div>
+          <div class="menu-btns">
+            <button>
+              <img src="{% static "icons/Group.svg" %}" alt="" height="" width="" />
+            </button>
+          </div>
         </div>
+        <div class="col-9">
+          <div class="table">
+            <div class="d-flex">
+              <div class="h1 col-6">Good morning, James!</div>
+              <div class="col-6 text-right">
+                <button>
+                  <img src="{% static "icons/Vector (3).svg" %}" alt="" class="p-8" height="" width="" />
+                </button>
+                <button>
+                  <img src="{% static "icons/Vector (2).svg" %}" alt="" height="" width="" />
+                </button>
+              </div>
+            </div>
+            <table class="col-12">
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Last activity</th>
+              </tr>
+              {% for member in members %}
+                <tr>
+                  <td>{{ member.fullname }}</td>
+                  <td>{{ member.specializations.first }}</td>
+                  <td>{{ member.email }}</td>
+                  <td>{{ member.get_gender_display }}</td>
+                  <td>{{ member.last_activity }}</td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

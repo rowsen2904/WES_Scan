@@ -1,7 +1,6 @@
 from django.db import models
 from django.http.response import Http404
 from django.utils.translation import gettext as _
-
 from rest_framework.response import Response
 
 

@@ -1,130 +1,130 @@
 body {
-    font-family: Montserrat;
-    src: url(../font/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(../font/Montserrat-Regular.ttf);
 }
 
 table {
-    text-align: left;
-    padding: 30px;
-    padding-top: 45px;
+  text-align: left;
+  padding: 30px;
+  padding-top: 45px;
 }
 
 th {
-    padding-right: 50px;
-    color: #8A8A8A;
+  padding-right: 50px;
+  color: #8A8A8A;
 }
 
 td {
-    padding-top: 40px;
-    font-weight: bolder;
+  padding-top: 40px;
+  font-weight: bolder;
 
 }
 
-button{
-    border: none;
-    background: none;
-    cursor: pointer;
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .col-1 {
-    width: 8.33333%;
+  width: 8.33333%;
 }
 
 .col-2 {
-    width: 16.66666%;
+  width: 16.66666%;
 }
 
 .col-3 {
-    width: 25%;
+  width: 25%;
 }
 
 .col-4 {
-    width: 33.33333%;
+  width: 33.33333%;
 }
 
 .col-5 {
-    width: 41.66667%;
+  width: 41.66667%;
 }
 
 .col-6 {
-    width: 50%;
+  width: 50%;
 }
 
 .col-7 {
-    width: 58.33333%;
+  width: 58.33333%;
 }
 
 .col-8 {
-    width: 66.66667%;
+  width: 66.66667%;
 }
 
 .col-9 {
-    width: 75%;
+  width: 75%;
 }
 
 .col-10 {
-    width: 83.33333%;
+  width: 83.33333%;
 }
 
 .col-11 {
-    width: 91.66667%;
+  width: 91.66667%;
 }
 
 .col-12 {
-    width: 100%;
-} 
+  width: 100%;
+}
 
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .menu {
-    width: 100px;
-    height: 700px;
-    background-color: #6F6AF8;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;
+  width: 100px;
+  height: 700px;
+  background-color: #6F6AF8;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
 }
 
 .menu-btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
 }
 
 .wes {
-    padding-top: 20px;
-    padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .h1 {
-    font-size: 35px;
-    font-weight: 900;
-    margin-left: 30px;
+  font-size: 35px;
+  font-weight: 900;
+  margin-left: 30px;
 }
 
 .text-right {
-    text-align: right;
-    vertical-align: bottom;
+  text-align: right;
+  vertical-align: bottom;
 }
 
 .table {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .p-8 {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 .bg-lightblue {
-    background-color: #F9FAFC;
+  background-color: #F9FAFC;
 }

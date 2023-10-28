@@ -9,8 +9,17 @@ class MemberSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Member
-        fields = ["id", "fullname", "email", "birth_date", "phone_number",
-                  "gender", "specializations", "activities", "image", ]
+        fields = [
+            "id",
+            "fullname",
+            "email",
+            "birth_date",
+            "phone_number",
+            "gender",
+            "specializations",
+            "activities",
+            "image",
+        ]
 
 
 class SpecializationSerializer(serializers.ModelSerializer):
