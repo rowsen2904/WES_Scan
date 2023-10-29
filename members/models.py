@@ -30,10 +30,8 @@ class Member(models.Model):
     email = models.EmailField()
     birth_date = models.DateField()
     gender = models.CharField(max_length=10, choices=Genders.choices)
-    specializations = models.ManyToManyField(
-        Specialization, related_name='member')
-    activities = models.ManyToManyField(
-        Date, related_name="activity", blank=True)
+    specializations = models.ManyToManyField(Specialization, related_name="member")
+    activities = models.ManyToManyField(Date, related_name="activity", blank=True)
     last_activity = models.DateTimeField(blank=True, null=True)
     image = models.ImageField(upload_to="members", blank=True, null=True)
     slug = models.SlugField(max_length=100, null=True, blank=True)

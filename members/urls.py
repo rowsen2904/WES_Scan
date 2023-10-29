@@ -6,4 +6,3 @@ urlpatterns = [
     path("", redirect_view, name="redirect-view"),
     path("members/", MemberListView.as_view(), name="members-list"),
 ]
-
